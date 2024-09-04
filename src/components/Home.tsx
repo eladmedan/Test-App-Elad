@@ -1,13 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 const Home: React.FC = () => {
-  useEffect(() => {
-    console.log('Home component rendered');
-  }, []);
-
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-      <button style={{ backgroundColor: 'blue', color: 'white', padding: '10px 20px', borderRadius: '5px' }}>
+    <div className="flex justify-center items-center h-screen">
+      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
         Press Me
       </button>
     </div>
