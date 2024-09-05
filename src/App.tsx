@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
 function App() {
+  const [isGreen, setIsGreen] = useState(true);
+
   const handleClick = () => {
-    alert('Button clicked!');
+    setIsGreen(!isGreen);
   };
 
   return (
     <div className="App">
-      <button className="big-button" onClick={handleClick}>
+      <button 
+        className={`big-button ${isGreen ? 'green' : 'blue'}`} 
+        onClick={handleClick}
+      >
         Click me
       </button>
     </div>

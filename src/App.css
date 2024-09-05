@@ -22,7 +22,6 @@ span {
 .big-button {
   font-size: 24px;
   padding: 20px 40px;
-  background-color: green;
   color: white;
   border: none;
   border-radius: 8px;
@@ -30,6 +29,18 @@ span {
   transition: background-color 0.3s;
 }
 
-.big-button:hover {
+.big-button.green {
+  background-color: green;
+}
+
+.big-button.green:hover {
   background-color: darkgreen;
+}
+
+.big-button.blue {
+  background-color: blue;
+}
+
+.big-button.blue:hover {
+  background-color: darkblue;
 }
